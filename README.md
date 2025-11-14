@@ -8,7 +8,8 @@
 - Cared Nicolle Castaños Manjarrez A01742620
 
 ## Challenge Description
-
+"According to the United Nations Food and Agriculture Organization (FAO), between 20% and 40% of global production is lost each year due to diseases, pests, and labor scarcity"
+The challenge is to create a functioning 3D simulation of a greenhouse implementing a multi-agent system capable of doing actions like inspecting, harvesting and removing diseased plants.
 
 ### Agents 
 
