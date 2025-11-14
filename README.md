@@ -16,29 +16,41 @@ The challenge is to create a functioning 3D simulation of a greenhouse implement
 #### General Manager
 
 #### Finder
-
-#### Planter
-**Architecture:** Reactive  
-**General Goal:** Replant tomato plants when they are cut.  
+**Architecture:** Hybrid  
+**General Goal:**   
 **Environment:** Agricultural crop farms contain planting spaces and other agents  
-**Perception:** SawAgent(), HasSeeds(), IsOnRestArea()  
-**Actions:** ReplenishSeeds(), WaterPlants(), PlantSeeds(), MoveForward(), Turn(degrees)  
+**Perception:** SawAgent(), SawTomato(), IsOnRestArea(), IsHarvestTime(), HasTomatoes(), IsOnDepositArea()  
+**Actions:** WaterPlants(), Harvest(), MoveForward(), Turn(degrees), TraversePlanters(), DepositTomatoes(), MoveForwards()  
+
+#### Harvester
+**Architecture:** Reactive  
+**General Goal:** Harvest and deposit tomatoesz.  
+**Environment:** Agricultural crop farms contain planting spaces and other agents  
+**Perception:** SawAgent(), SawTomato(), IsOnRestArea(), IsHarvestTime(), HasTomatoes(), IsOnDepositArea()  
+**Actions:** WaterPlants(), Harvest(), MoveForward(), Turn(degrees), TraversePlanters(), DepositTomatoes(), MoveForwards()  
 ```js
-Layer 0: Stand Down
-  IF(IsOnRestArea())
-    IF(
-    ReplenishSeeds()
+Layer 0: Stand down
 Layer 1: Go to rest area
-  IF(!IsOnRestArea())
-    MoveForward(rest area)
-Layer 2:
-Layer 3:
-Layer 4: Avoid other agents
-  IF (SawAgent())
+	IF(!IsOnRestArea())
+		MoveTorwards(rest area)
+Layer 2: Go to deposit tomatoes
+	IF(HasTomatoes() && !IsOnDepositArea())
+		MoveTowards(deposit area)
+	IF(HasTomatoes() && IsOnDepositArea())
+		DepositTomatoes()
+Layer 3: Go harvest
+	IF(IsHarvestTime())
+		TraversePlanters()
+Layer 4: Collect tomatoes
+	IF(SawTomatoe())
+		Harvest()
+Layer 5: Avoid other agents
+	IF (SawAgent())
 		Turn(90)
 		MoveFoward()
 		Turn(-90)
 ```
 
-
 ### Work Plan
+
+
