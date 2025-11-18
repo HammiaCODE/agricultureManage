@@ -30,7 +30,7 @@ Intentions
 	> CURRENT_PLAN: Call to colect(assignedArea)
 ```
 
-#### Finder
+#### CropSentry
 **Architecture:** Hybrid  
 ##### **Reactive**
 **General Goal:** Search for and remove infected tomatoes and their adjacent ones to reduce harvested infected tomatos ratio.  
