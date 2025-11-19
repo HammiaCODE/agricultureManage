@@ -104,6 +104,118 @@ Layer 5: Avoid other agents
 		Turn(-90)
 ```
 
-### Work Plan
+# AgricultureManage – Work Plan
 
+## Team Roles  
+**Modeling (Blender)**  
+- **Erick** – Robot models  
+- **Cared** – Tomato plants  
+- **Hannia** – Greenhouse and props  
 
+**Unity Development**  
+- **Patricio** – Scene setup, Harvester logic, UI, tomato states  
+- **Santiago** – CropSentry logic, Manager agent, perception, integration  
+
+---
+
+## Week 3 – Modeling, Unity Setup, Agent Basics
+
+### Blender Tasks (Erick, Cared, Hannia)  
+- Model robots: Harvester, CropSentry, Manager  
+- Model tomato plants: healthy and infected  
+- Model greenhouse and planting rows  
+- Add UV maps and basic textures  
+- Export models as FBX for Unity  
+
+**Deliverables:**  
+- Blender files (.blend)  
+- FBX files ready for Unity  
+
+### Unity Scene Setup (Patricio, Santiago)  
+- Import models into Unity  
+- Build greenhouse layout  
+- Add colliders and NavMesh  
+- Create prefabs for robots, plants, and slots  
+- Add basic camera movement  
+
+**Deliverables:**  
+- Prototype Unity scene  
+- Prefabs ready for scripting  
+
+### Agent Script Skeletons (Santiago, Patricio)  
+- Create C# scripts for each agent  
+- Add basic movement: MoveForward(), Turn()  
+- Add perception triggers: SawPlant(), SawAgent(), etc.  
+
+**Deliverables:**  
+- Agents moving in test mode  
+- Console shows perception logs  
+
+---
+
+## Week 4 – Agent Behaviors and Simulation Logic
+
+### Harvester (Reactive – Patricio)  
+- Move through planting rows  
+- Detect and collect tomatoes  
+- Go to deposit area  
+- Drop off tomatoes  
+
+**Goal:** Full harvest cycle working  
+
+### CropSentry (Hybrid – Santiago)  
+- Patrol greenhouse  
+- Detect infected plants  
+- Remove infected tomatoes  
+- Avoid other agents  
+
+**Goal:** Infected tomato removal working  
+
+### General Manager (Deliberative – Santiago)  
+- Use BDI logic (Belief, Desire, Intention)  
+- Decide when to harvest  
+- Track infection levels  
+- Assign tasks to agents  
+
+**Goal:** Manager makes smart decisions  
+
+### Tomato State Machine (Patricio)  
+- Define states: Healthy, Infected, Removed  
+- Add random infection generator  
+- Control harvest timing  
+
+**Goal:** Tomato states change during simulation  
+
+---
+
+## Week 4–5 – Final Integration and Presentation
+
+### Integration & Testing (Patricio, Santiago)  
+- Fix movement and pathfinding bugs  
+- Improve perception and performance  
+
+**Goal:** Smooth simulation  
+
+### UI & Metrics (Patricio)  
+- Add HUD showing:  
+  - Tomatoes collected  
+  - Infected found and missed  
+  - Manager decisions  
+  - Current cycle  
+- Add debug tools  
+
+**Goal:** Clear and useful UI  
+
+### Visual Polish (Erick, Hannia, Cared)  
+- Improve lighting and materials  
+- Clean up models  
+- Make tomato states easy to see  
+
+**Goal:** Professional look  
+
+### Final Presentation (Whole Team)  
+- Record demo video  
+- Take screenshots  
+- Make slides and documentation  
+
+**Goal:** Final build and presentation ready  
