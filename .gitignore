@@ -1,13 +1,12 @@
 # Unity generated files
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/Assets/AssetStoreTools/
-/Logs/
-/Packages/
-/UserSettings/
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+Assets/AssetStoreTools/
+Logs/
+UserSettings/
 
 # Visual Studio / Rider files
 .vs/
