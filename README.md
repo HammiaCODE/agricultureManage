@@ -117,6 +117,54 @@ Layer 5: Avoid other agents
 - **Santiago** – CropSentry logic, Manager agent, perception, integration  
 
 ---
+## Week 1 – Creation, idea management, role division
+
+### Repo Creation (Hannia)
+- Creation of repo and uploading of initial files
+
+**Deliverables:**  
+- git link w/revision 1
+- MD document
+
+### Brainstorming (All teamates)
+- Start drawing up ideas of how the layout could work and what agents could be in what
+- 
+**Deliverables:**  
+- Diagram photos
+- Diagram descriptions
+
+### Role subdivision (All) 
+- Choose which teammates does what
+
+**Deliverables:**  
+- MD section w/roles
+
+---
+---
+## Week 2 – Asset development and initial agent integration
+
+### Blender Modeling (Erick, Cared, Hannia)
+- Erick: Refine robot base meshes and prepare for rigging
+- Cared: Model tomato plant growth stages (seedling, mid-growth, harvest-ready)
+- Hannia: Create greenhouse props (irrigation pipes, soil beds, lighting fixtures)
+
+**Deliverables:**  
+- Robot model pack (base + rig-ready)  
+- Tomato plant growth stage assets  
+- Greenhouse prop set  
+
+### Unity Development (Patricio, Santiago)
+- Patricio: Import Blender assets into Unity scene and refine Harvester agent logic (collision detection, tomato state transitions)  
+- Santiago: Implement CropSentry agent perception system (raycasting, sensor logic) and begin Manager agent hybrid architecture setup (Beliefs, Desires, Intentions)
+
+**Deliverables:**  
+- Updated Unity scene with integrated models  
+- Harvester agent prototype with tomato state transitions  
+- CropSentry agent perception graph  
+- Manager agent hybrid architecture draft  
+---
+
+
 
 ## Week 3 – Modeling, Unity Setup, Agent Basics
 
