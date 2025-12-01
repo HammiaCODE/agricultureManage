@@ -25,12 +25,12 @@ public class DepositArea : MonoBehaviour
 
         Harvest harvest = harvester.GetComponent<Harvest>();
 
-        tomatoCount += harvest.tomatoes;
-        harvest.tomatoes = 0;
+        tomatoCount += harvest.tomatoesCarried;
+        harvest.tomatoesCarried = 0;
         tomatoesColected.text = "Tomatoes Colected " + tomatoCount;
 
-        infectedCount += harvest.infectedT;
-        harvest.infectedT = 0;
+        infectedCount += harvest.infectedCarried;
+        harvest.infectedCarried = 0;
         tomatoesColected.text = "Tomatoes Colected " + tomatoCount;
         infectedColected.text = "Infected Colected " + infectedCount;
     }

@@ -2,8 +2,14 @@ using UnityEngine;
 
 public class Harvest : MonoBehaviour
 {
-    public int tomatoes;
-    public int infectedT;
+    public int tomatoesCarried;
+    public int infectedCarried;
+
+    public float rayDistance = 3f;
+    public LayerMask plantLayer;
+
+     private float cooldown = .2f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,7 +19,40 @@ public class Harvest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        cooldown -= Time.deltaTime;
+
+        if(cooldown <= 0f)
+        {
+            HarvestPlant();
+        }
+    }
+
+    private void HarvestPlant()
+    {
+        RaycastHit hit;
+
+        Vector3 origin = transform.position;
+        Vector3 direction = transform.right;
+
+        if (Physics.Raycast(origin, direction, out hit, rayDistance, plantLayer))
+        {
+            PlantSpace plant = hit.collider.GetComponentInParent<PlantSpace>();
+            if (plant != null)
+            {
+                switch(plant.HarvestFruit())
+                {
+                    case 0:
+                        break;
+                    case 1:
+                        tomatoesCarried++;
+                        break;
+                    case 2:
+                        infectedCarried++;
+                        break;
+                }
+                cooldown = .2f;
+            }
+        }
     }
 
     // sees a plant with tomatoe collects it
