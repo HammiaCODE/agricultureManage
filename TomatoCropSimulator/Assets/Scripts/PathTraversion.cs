@@ -9,7 +9,6 @@ public class PathTraversion : MonoBehaviour
     private float time = 0f;
     private NavMeshAgent agent;
 
-    // Movement flag
     private bool movementEnabled = false;
 
     private void Awake()
@@ -19,19 +18,18 @@ public class PathTraversion : MonoBehaviour
 
     void Start()
     {
-        // Disable movement until manager triggers it
         agent.isStopped = true;
     }
 
     void Update()
     {
-        if (!movementEnabled) return;
+        if(!movementEnabled) return;
 
-        if (!agent.pathPending && agent.remainingDistance <= 0.1f)
+        if(!agent.pathPending && agent.remainingDistance <= 0.1f)
         {
             time += Time.deltaTime;
 
-            if (time >= waitTime)
+            if(time >= waitTime)
             {
                 time = 0f;
                 agent.destination = path.GetNextWayPoint();

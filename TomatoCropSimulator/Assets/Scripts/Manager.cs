@@ -1,15 +1,19 @@
 using UnityEngine;
 
-public class MovementManager : MonoBehaviour
+public class Manager : MonoBehaviour
 {
     [SerializeField] private PathTraversion[] cropSentries;
     [SerializeField] private PathTraversion[] harvesters;
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
             StartSentries();
+        }
+        if(Input.GetKeyDown(KeyCode.B))
+        {
+            StartHarvesters();
         }
     }
 
