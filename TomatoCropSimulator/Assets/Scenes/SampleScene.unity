@@ -475,6 +475,7 @@ GameObject:
   - component: {fileID: 67110547}
   - component: {fileID: 67110546}
   - component: {fileID: 67110545}
+  - component: {fileID: 67110549}
   m_Layer: 6
   m_Name: PlantPlaceholder (1)
   m_TagString: Untagged
@@ -504,7 +505,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67110543}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -587,6 +588,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67110543}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &67110549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67110543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 67110547}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &71893973
 GameObject:
   m_ObjectHideFlags: 0
@@ -1646,6 +1668,7 @@ GameObject:
   - component: {fileID: 237828243}
   - component: {fileID: 237828242}
   - component: {fileID: 237828241}
+  - component: {fileID: 237828245}
   m_Layer: 6
   m_Name: PlantPlaceholder (10)
   m_TagString: Untagged
@@ -1675,7 +1698,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237828239}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -1758,6 +1781,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237828239}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &237828245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237828239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 237828243}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &239052013
 GameObject:
   m_ObjectHideFlags: 0
@@ -1868,6 +1912,7 @@ GameObject:
   - component: {fileID: 264848952}
   - component: {fileID: 264848951}
   - component: {fileID: 264848950}
+  - component: {fileID: 264848954}
   m_Layer: 6
   m_Name: PlantPlaceholder (14)
   m_TagString: Untagged
@@ -1897,7 +1942,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264848948}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -1980,6 +2025,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 264848948}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &264848954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 264848948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 264848952}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &300160846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,6 +2216,7 @@ GameObject:
   - component: {fileID: 307768439}
   - component: {fileID: 307768438}
   - component: {fileID: 307768437}
+  - component: {fileID: 307768443}
   m_Layer: 0
   m_Name: Sentry
   m_TagString: CropSentry
@@ -2181,10 +2248,10 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 12
-  m_Acceleration: 8
+  m_Speed: 5
+  m_Acceleration: 5
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 110
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -2285,6 +2352,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &307768443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307768436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06c612b8896fac242a1ea5dc027d9459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CropSentrySensor
+  rayDistance: 2
+  rayCooldown: 0.2
 --- !u!1 &311673634
 GameObject:
   m_ObjectHideFlags: 0
@@ -2978,6 +3059,7 @@ GameObject:
   - component: {fileID: 425709027}
   - component: {fileID: 425709026}
   - component: {fileID: 425709025}
+  - component: {fileID: 425709029}
   m_Layer: 6
   m_Name: PlantPlaceholder (5)
   m_TagString: Untagged
@@ -3007,7 +3089,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425709023}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -3090,6 +3172,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425709023}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &425709029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425709023}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 425709027}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &438116544
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,6 +3206,7 @@ GameObject:
   - component: {fileID: 438116548}
   - component: {fileID: 438116547}
   - component: {fileID: 438116546}
+  - component: {fileID: 438116550}
   m_Layer: 6
   m_Name: PlantPlaceholder (15)
   m_TagString: Untagged
@@ -3132,7 +3236,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438116544}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -3215,6 +3319,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438116544}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &438116550
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438116544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 438116548}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &453271472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3541,6 +3666,50 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 660279611}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &541089025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 541089027}
+  - component: {fileID: 541089026}
+  m_Layer: 0
+  m_Name: ClassificationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &541089026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541089025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e853dc3bf0463448f6547166390ed4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantClassificationManager
+--- !u!4 &541089027
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541089025}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 27.5805, y: 5.57671, z: 32.04744}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &546637430
 GameObject:
@@ -5520,6 +5689,7 @@ GameObject:
   - component: {fileID: 879903361}
   - component: {fileID: 879903360}
   - component: {fileID: 879903359}
+  - component: {fileID: 879903363}
   m_Layer: 6
   m_Name: PlantPlaceholder (7)
   m_TagString: Untagged
@@ -5549,7 +5719,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879903357}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -5632,6 +5802,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 879903357}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &879903363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879903357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 879903361}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &886959086
 GameObject:
   m_ObjectHideFlags: 0
@@ -6340,6 +6531,7 @@ GameObject:
   - component: {fileID: 955892676}
   - component: {fileID: 955892675}
   - component: {fileID: 955892674}
+  - component: {fileID: 955892678}
   m_Layer: 6
   m_Name: PlantPlaceholder (12)
   m_TagString: Untagged
@@ -6369,7 +6561,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955892672}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -6452,6 +6644,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 955892672}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &955892678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955892672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 955892676}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &957883398
 GameObject:
   m_ObjectHideFlags: 0
@@ -7182,6 +7395,7 @@ GameObject:
   - component: {fileID: 1075098156}
   - component: {fileID: 1075098155}
   - component: {fileID: 1075098154}
+  - component: {fileID: 1075098158}
   m_Layer: 6
   m_Name: PlantPlaceholder (4)
   m_TagString: Untagged
@@ -7211,7 +7425,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075098152}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -7294,6 +7508,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1075098152}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1075098158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1075098152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 1075098156}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1090029583
 GameObject:
   m_ObjectHideFlags: 0
@@ -7510,6 +7745,7 @@ GameObject:
   - component: {fileID: 1113816630}
   - component: {fileID: 1113816629}
   - component: {fileID: 1113816628}
+  - component: {fileID: 1113816632}
   m_Layer: 6
   m_Name: PlantPlaceholder (9)
   m_TagString: Untagged
@@ -7539,7 +7775,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113816626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -7622,6 +7858,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1113816626}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1113816632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113816626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 1113816630}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1115487347
 GameObject:
   m_ObjectHideFlags: 0
@@ -8277,6 +8534,7 @@ GameObject:
   - component: {fileID: 1259470659}
   - component: {fileID: 1259470658}
   - component: {fileID: 1259470657}
+  - component: {fileID: 1259470661}
   m_Layer: 6
   m_Name: PlantPlaceholder (11)
   m_TagString: Untagged
@@ -8306,7 +8564,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259470655}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -8389,6 +8647,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1259470655}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1259470661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259470655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 1259470659}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1262303630
 GameObject:
   m_ObjectHideFlags: 0
@@ -8562,6 +8841,7 @@ GameObject:
   - component: {fileID: 1268835456}
   - component: {fileID: 1268835455}
   - component: {fileID: 1268835454}
+  - component: {fileID: 1268835458}
   m_Layer: 6
   m_Name: PlantPlaceholder (13)
   m_TagString: Untagged
@@ -8591,7 +8871,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268835452}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -8674,6 +8954,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268835452}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1268835458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268835452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 1268835456}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1270813100
 GameObject:
   m_ObjectHideFlags: 0
@@ -9198,6 +9499,7 @@ GameObject:
   - component: {fileID: 1407168605}
   - component: {fileID: 1407168604}
   - component: {fileID: 1407168603}
+  - component: {fileID: 1407168607}
   m_Layer: 6
   m_Name: PlantPlaceholder (8)
   m_TagString: Untagged
@@ -9227,7 +9529,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407168601}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -9310,6 +9612,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407168601}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1407168607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407168601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 1407168605}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1427939152
 GameObject:
   m_ObjectHideFlags: 0
@@ -10118,6 +10441,7 @@ GameObject:
   - component: {fileID: 1624132705}
   - component: {fileID: 1624132704}
   - component: {fileID: 1624132703}
+  - component: {fileID: 1624132707}
   m_Layer: 6
   m_Name: PlantPlaceholder
   m_TagString: Untagged
@@ -10147,7 +10471,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624132701}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -10230,6 +10554,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1624132701}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1624132707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1624132701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 1624132705}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1633304137
 GameObject:
   m_ObjectHideFlags: 0
@@ -10430,6 +10775,7 @@ GameObject:
   - component: {fileID: 1674976803}
   - component: {fileID: 1674976802}
   - component: {fileID: 1674976801}
+  - component: {fileID: 1674976805}
   m_Layer: 6
   m_Name: PlantPlaceholder (2)
   m_TagString: Untagged
@@ -10459,7 +10805,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674976799}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -10542,6 +10888,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1674976799}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1674976805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1674976799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 1674976803}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1691988157
 GameObject:
   m_ObjectHideFlags: 0
@@ -10683,6 +11050,7 @@ GameObject:
   - component: {fileID: 1725129217}
   - component: {fileID: 1725129216}
   - component: {fileID: 1725129215}
+  - component: {fileID: 1725129219}
   m_Layer: 6
   m_Name: PlantPlaceholder (3)
   m_TagString: Untagged
@@ -10712,7 +11080,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725129213}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -10795,6 +11163,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1725129213}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1725129219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1725129213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 1725129217}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1730962609
 GameObject:
   m_ObjectHideFlags: 0
@@ -11917,6 +12306,7 @@ GameObject:
   - component: {fileID: 1893641167}
   - component: {fileID: 1893641166}
   - component: {fileID: 1893641165}
+  - component: {fileID: 1893641169}
   m_Layer: 6
   m_Name: PlantPlaceholder (6)
   m_TagString: Untagged
@@ -11946,7 +12336,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893641163}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c61bf80bf7490446961f9f372b6dc22, type: 3}
   m_Name: 
@@ -12029,6 +12419,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893641163}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1893641169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893641163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38c8d82fba98f0c4291196224a481a51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlantHolder
+  imagePathAssigned: 
+  hasBeenClassified: 0
+  isInfected: 0
+  predictedClassName: 
+  plantRenderer: {fileID: 1893641167}
+  healthyColor: {r: 0, g: 1, b: 0, a: 1}
+  infectedColor: {r: 1, g: 0, b: 0, a: 1}
+  gizmoColorHealthy: {r: 0, g: 1, b: 0, a: 1}
+  gizmoColorInfected: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &1907392320
 GameObject:
   m_ObjectHideFlags: 0
@@ -13082,3 +13493,4 @@ SceneRoots:
   - {fileID: 1270892486}
   - {fileID: 1588965774}
   - {fileID: 1094391469}
+  - {fileID: 541089027}
