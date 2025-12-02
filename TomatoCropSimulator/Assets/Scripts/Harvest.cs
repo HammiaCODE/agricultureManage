@@ -8,7 +8,7 @@ public class Harvest : MonoBehaviour
     public float rayDistance = 3f;
     public LayerMask plantLayer;
 
-     private float cooldown = .2f;
+     private float cooldown = .05f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -33,6 +33,8 @@ public class Harvest : MonoBehaviour
 
         Vector3 origin = transform.position;
         Vector3 direction = transform.right;
+        
+        Debug.DrawRay(origin, direction * rayDistance, Color.red);
 
         if (Physics.Raycast(origin, direction, out hit, rayDistance, plantLayer))
         {
