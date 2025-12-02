@@ -3,8 +3,8 @@ using TMPro;
 
 public class DepositArea : MonoBehaviour
 {
-    private int tomatoCount = 0;
-    private int infectedCount = 0;
+    [SerializeReference] private int tomatoCount = 0;
+    [SerializeReference]private int infectedCount = 0;
 
     public TMP_Text tomatoesColected;
     public TMP_Text infectedColected;
@@ -19,7 +19,7 @@ public class DepositArea : MonoBehaviour
         
     }
 
-    void OnCollisionEnter(Collision collision)
+    void OnTriggerEnter(Collider collision)
     {
         GameObject harvester = collision.gameObject;
 
