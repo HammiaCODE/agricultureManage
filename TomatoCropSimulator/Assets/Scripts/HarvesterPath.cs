@@ -1,10 +1,11 @@
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PathTraversion : MonoBehaviour
+public class HarvesterPath : MonoBehaviour
 {
     [SerializeField] private WaypointPath path;
     [SerializeField] private float waitTime = 1f;
+    [SerializeField] private Transform home;
 
     private float time = 0f;
     private NavMeshAgent agent;
@@ -47,6 +48,7 @@ public class PathTraversion : MonoBehaviour
     public void StopMovement()
     {
         movementEnabled = false;
-        agent.isStopped = true;
+        agent.destination = home.position;
+        //agent.isStopped = true;
     }
 }
