@@ -3,7 +3,7 @@ using UnityEngine;
 public class CropSentrySensor : MonoBehaviour
 {
     [Header("Raycast settings")]
-    public float rayDistance = 2f;
+    public float rayDistance = 4f;
     public float rayCooldown = 0.001f;
 
     private float nextRayTime = 0f;

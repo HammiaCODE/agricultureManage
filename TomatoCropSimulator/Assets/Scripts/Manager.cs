@@ -5,35 +5,46 @@ public class Manager : MonoBehaviour
     [SerializeField] private SentryPath[] cropSentries;
     [SerializeField] private HarvesterPath[] harvesters;
 
-    private float cutTime = 15f;
-    private float stopCut = 30f;
-    private float harvestTime = 127f;
-    private float startCutTimer = 0f; 
+    [SerializeField] private float cutDuration = 15f;
+    [SerializeField] private float stopCutDuration = 25;
+    [SerializeField] private float harvestDuration = 45f;
+    
+    private float cutTime;
+    private float stopCutTime;
+    private float harvestTime;
+
+    private float cycleTimer = 0f; 
     
     private bool sentriesStarted = false;
     private bool sentriesStopped = false;
-    
-    private bool harvesterStarted = false;
-    private bool harvesterStopped = false;
+    private bool harvestersStarted = false;
+    private bool harvestersStopped = false;
     
     void Update()
     {
-        startCutTimer += Time.deltaTime;
-        if (!sentriesStarted && startCutTimer >= cutTime)
+        cycleTimer += Time.deltaTime;
+
+        if (!sentriesStarted && cycleTimer >= cutTime)
         {
             StartSentries();
-        }
-        
-        // Stop sentries after stopCut
-        if (sentriesStarted && !sentriesStopped && startCutTimer >= stopCut + cutTime)
-        {
-            StopSentries();
-            StartHarvesters();
+            sentriesStarted = true;
         }
 
-        if (harvesterStarted && !harvesterStopped && startCutTimer >= harvestTime + cutTime + stopCut)
+        if (sentriesStarted && !sentriesStopped && cycleTimer >= stopCutTime)
+        {
+            StopSentries();
+            sentriesStopped = true;
+
+            StartHarvesters();
+            harvestersStarted = true;
+        }
+
+        if (harvestersStarted && !harvestersStopped && cycleTimer >= harvestTime)
         {
             StopHarvesters();
+            harvestersStopped = true;
+
+            StartNewCycle();
         }
     }
 
@@ -48,7 +59,7 @@ public class Manager : MonoBehaviour
     }
     private void StartHarvesters()
     {
-        harvesterStarted = true;
+        harvestersStarted = true;
         foreach (var agent in harvesters)
         {
             if (agent != null)
@@ -68,12 +79,26 @@ public class Manager : MonoBehaviour
 
     private void StopHarvesters()
     {
-        harvesterStopped = true;
+        harvestersStopped = true;
         foreach (var agent in harvesters)
         {
             if (agent != null)
                 agent.StopMovement();
         }
+    }
+
+    void StartNewCycle()
+    {
+        cycleTimer = 0f;
+
+        sentriesStarted = false;
+        sentriesStopped = false;
+        harvestersStarted = false;
+        harvestersStopped = false;
+
+        cutTime = cutDuration;
+        stopCutTime = cutDuration + stopCutDuration;
+        harvestTime = cutDuration + stopCutDuration + harvestDuration;
     }
 }
 

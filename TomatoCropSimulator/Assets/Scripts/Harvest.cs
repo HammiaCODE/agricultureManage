@@ -6,6 +6,7 @@ public class Harvest : MonoBehaviour
     public int infectedCarried;
 
     public float rayDistance = 3f;
+    public int reverse = 1;
     public LayerMask plantLayer;
 
      private float cooldown = .05f;
@@ -32,7 +33,7 @@ public class Harvest : MonoBehaviour
         RaycastHit hit;
 
         Vector3 origin = transform.position;
-        Vector3 direction = transform.right;
+        Vector3 direction = transform.right * reverse;
         
         Debug.DrawRay(origin, direction * rayDistance, Color.red);
 

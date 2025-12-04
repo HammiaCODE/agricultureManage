@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlantClassificationManager : MonoBehaviour
 {
-
     private int count = 0;
 
     private async void Start()
