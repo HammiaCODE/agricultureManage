@@ -66,6 +66,7 @@ public class PlantSpace : MonoBehaviour
     public void CutPlant()
     {
         plantModel.SetActive(false);
+        hasFruit = false;
         fruitPlantModel.SetActive(false);
         growthCicleActive = false;
     }
