@@ -38,7 +38,7 @@ public class Harvest : MonoBehaviour
 
         if (Physics.Raycast(origin, direction, out hit, rayDistance, plantLayer))
         {
-            PlantSpace plant = hit.collider.GetComponentInParent<PlantSpace>();
+            PlantHolder plant = hit.collider.GetComponentInParent<PlantHolder>();
             if (plant != null)
             {
                 switch(plant.HarvestFruit())

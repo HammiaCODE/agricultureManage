@@ -25,11 +25,12 @@ public class CropSentrySensor : MonoBehaviour
 
             if (plant != null && plant.hasBeenClassified)
             {
-                Debug.Log($"CropSentry sees plant {plant.name} | infected = {plant.isInfected}");
 
                 if (plant.isInfected)
                 {
-                    // Implement cropping
+                    // Implemented cropping
+                    
+                    plant.CutPlant();
                 }
             }
         }

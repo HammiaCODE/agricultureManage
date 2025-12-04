@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlantClassificationManager : MonoBehaviour
 {
 
+    private int count = 0;
 
     private async void Start()
     {
@@ -25,10 +26,10 @@ public class PlantClassificationManager : MonoBehaviour
             Debug.LogError("No images found in the specified folders!");
             return;
         }
-
-        // 🔽 aquí usamos la nueva API
+        
+   
         PlantHolder[] plants = FindObjectsByType<PlantHolder>(FindObjectsSortMode.None);
-
+        
         foreach (var plant in plants)
         {
             string randomPath = allImages[Random.Range(0, allImages.Count)];
@@ -44,6 +45,8 @@ public class PlantClassificationManager : MonoBehaviour
                 continue;
             }
 
+            count++;
+
             plant.predictedClassName = prediction.predicted_class_name;
             plant.hasBeenClassified = true;
             plant.isInfected = prediction.predicted_class_name != "Fruit healthy";
@@ -51,7 +54,7 @@ public class PlantClassificationManager : MonoBehaviour
             Debug.Log($"{plant.name} -> {prediction.predicted_class_name} (infected = {plant.isInfected})");
         }
 
-        Debug.Log("Finished classifying all plants.");
+        Debug.Log($"Finished classifying all plants, {count} of {plants.Length}"); 
     }
 
 
