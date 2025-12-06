@@ -1,0 +1,3 @@
+simulation will not run normally if the docker file llm is not running on localhost 80
+
+can still get  infected tomatoes after harvesting tomatoes
